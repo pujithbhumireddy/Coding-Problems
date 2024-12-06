@@ -1,0 +1,25 @@
+package main;
+
+import java.util.Arrays;
+
+public class Anagram {
+	
+	 public static void main(String[] args) {
+	      String name1 = "pujith";
+	      String name2 = "thijpu";
+	      char[] ch1 = name1.toCharArray();
+	      char[] ch2 = name2.toCharArray();
+	      Arrays.sort(ch1);
+	      Arrays.sort(ch2);
+	      String string1 = new String(ch1);
+	      String string2 = new String(ch2);
+	      if (string1.length() != string2.length()) {
+	         System.out.println("the length is not equal so it is not an anagram");
+	      } else if (string1.equals(string2)) {
+	         System.out.println(name1 + " , " + name2 + " are anagram");
+	      } else {
+	         System.out.println(name1 + " , " + name2 + " are not anagram");
+	      }
+
+
+}
