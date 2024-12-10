@@ -48,19 +48,24 @@ public class MergeSortedArray {
 		int n = 3;
 		int m = nums2.length;
 
-		int[] combined = new int[n + m];
+//		for (int j = 0; j < m; j++)
+//			nums1[n + j] = nums2[j];
+//		Arrays.sort(nums1);
 
-		for (int i = 0; i < n; i++)
+		int p = n - 1;
+		int q = m - 1;
+		int r = nums1.length - 1;
 
-			combined[i] = nums1[i];
+		while (r >= 0) {
+			if (q < 0)
+				break;
 
-		for (int j = 0; j < m; j++)
-			combined[n + j] = nums2[j];
-
-		Arrays.sort(combined);
-
-		for (int k = 0; k < combined.length; k++)
-			nums1[k] = combined[k];
+			if (p >= 0 && nums1[p] >= nums2[q]) {
+				nums1[r--] = nums1[p--];
+			} else {
+				nums1[r--] = nums2[q--];
+			}
+		}
 
 		System.out.println(Arrays.toString(nums1));
 
