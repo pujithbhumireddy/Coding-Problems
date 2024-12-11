@@ -27,7 +27,7 @@ public class Anagram {
 	
 	public static void main(String[] args)
 	{
-		String str1 = "good";
+		String str1 = "good"; //enter the 
 		String str2 = "godo";
 		
 		if(isAnagram(str1,str2))
