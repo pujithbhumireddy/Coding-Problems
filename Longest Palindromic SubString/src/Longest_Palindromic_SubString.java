@@ -1,5 +1,17 @@
 
 public class Longest_Palindromic_SubString {
+	
+	/*
+	 * leetcode: 5. Longest Palindromic Substring* Given a string s, return the
+	 * longest palindromic substring in s.
+	 *
+	 * Example 1:
+	 * 
+	 * Input: s = "babad" Output: "bab" Explanation: "aba" is also a valid answer.
+	 * Example 2:
+	 * 
+	 * Input: s = "cbbd" Output: "bb"
+	 */
 
 	public static boolean isLongPalSs(String str) {
 
@@ -23,7 +35,7 @@ public class Longest_Palindromic_SubString {
 	}
 
 	public static void main(String[] args) {
-		String str = "banana";
+		String str = "cbbd";
 
 		int len = str.length();
 		String longestSubString = "";
