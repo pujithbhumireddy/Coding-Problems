@@ -3,15 +3,17 @@ public class Longest_Palindromic_SubString {
 
 	public static boolean isLongPalSs(String str) {
 
-		if (str == "" && str.length() == 0)
+		if (str == "" && str.length() == 0) {
 			return false;
+		}
 
 		int left = 0;
 		int right = str.length() - 1;
 
 		while (left < right) {
-			if (str.charAt(left) != str.charAt(right))
+			if (str.charAt(left) != str.charAt(right)) {
 				return false;
+			}
 
 			left++;
 			right--;
@@ -31,8 +33,9 @@ public class Longest_Palindromic_SubString {
 			for (int j = i; j < len; j++) {
 				substr += (str.charAt(j) + "");
 
-				if (isLongPalSs(substr) && substr.length() > longestSubString.length())
+				if (isLongPalSs(substr) && substr.length() > longestSubString.length()) {
 					longestSubString = substr;
+				}
 			}
 		}
 
