@@ -1,6 +1,7 @@
 
 public class Palindrome_String {
 
+
 	public static boolean isPalindromeString(String name) {
 
 		if (name == "" && name.length() == 0)
@@ -27,7 +28,10 @@ public class Palindrome_String {
 			System.out.println(name + ": it is a palindrome string");
 		} else {
 			System.out.println(name + ": it is not a palindrome string");
-		}
+		} 
+	
+
+	
 	}
 
 }

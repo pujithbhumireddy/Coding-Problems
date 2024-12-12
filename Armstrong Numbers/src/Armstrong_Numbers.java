@@ -12,7 +12,7 @@ public class Armstrong_Numbers {
 	 */
 	
 	public static void main(String[] args) {
-		int num = 407; // armstrong number = , 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407, 1634, 8208,9474
+		int num = 407; // armstrong numbers = , 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407, 1634, 8208,9474
 		int temp = num;
 		int power = iscounter(num);
 		int sum = 0;
