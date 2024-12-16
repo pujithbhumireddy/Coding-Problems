@@ -11,7 +11,7 @@ public class Find_Words_Containing_Character {
 	 * Return an array of indices representing the words that contain the character x.
 	 * 
 	 * Note that the returned array may be in any order.
-	
+	 * 
 	 * Example 1:
 	 * 
 	 * Input: words = ["leet","code"], x = "e" Output: [0,1] Explanation: "e" occurs
@@ -34,18 +34,32 @@ public class Find_Words_Containing_Character {
 //		String[] words = {"abc","bcd","aaaa","cbc"};
 		char target = 'a';
 		List<Integer> result = new ArrayList<>();
+		int len = words.length;
 
-		for (int i = 0; i < words.length; i++) {
+		for (int i = 0; i < len; i++) {
 			String word = words[i];
+
 			for (char ch : word.toCharArray()) {
 				if (ch == target) {
+
 					result.add(i);
 					break;
+
 				}
 			}
+
 		}
 
 		System.out.println(result);
+		
+//		int[] arr = {1,2,3,4,5};
+//		
+//		Integer[] converted = Arrays.stream(arr).boxed().toArray(Integer[] :: new);
+//		
+//		ArrayList<Integer> resultt = new ArrayList<>(Arrays.asList(converted));
+//		
+//		System.out.println(resultt);
+		
 
 	}
 
