@@ -31,12 +31,9 @@ public class Two_sum {
 		
 		int[] result = istwosum(nums, target);
 		
-		if (result.length == 2) {
+		
 			System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
-		} else {
-			System.out.println("No solution found.");
-		}
-	
+		
 	}
 	
 	public static int[] istwosum(int[] nums, int target)
