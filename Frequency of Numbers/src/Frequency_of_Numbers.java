@@ -12,6 +12,8 @@ public class Frequency_of_Numbers {
 		for (int elements : arr) {
 			Freqmap.put(elements, Freqmap.getOrDefault(elements, 0) + 1);
 		}
+		
+//		System.out.println(Freqmap);
 
 		int maxno = -1;
 		int maxfreq = 0;
